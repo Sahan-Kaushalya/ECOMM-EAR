@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="flex justify-center items-center h-screen">
-        <h1 class="text-3xl font-bold text-blue-600">Welcome to Ecomm-ear!</h1>
+        <h1 class="text-3xl font-bold text-blue-600">Welcome to Ecomm-EAR!</h1>
     </div>
 </body>
 </html>
