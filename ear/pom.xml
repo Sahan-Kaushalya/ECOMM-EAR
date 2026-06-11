@@ -13,7 +13,6 @@
     <packaging>ear</packaging>
     <name>ee-ear</name>
 
-
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -50,6 +49,24 @@
                 <version>3.3.0</version>
                 <configuration>
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
+                    <modules>
+                        <jarModule>
+                            <groupId>lk.kaushalya</groupId>
+                            <artifactId>core</artifactId>
+                            <bundleFileName>core.jar</bundleFileName>
+                        </jarModule>
+                        <ejbModule>
+                            <groupId>lk.kaushalya</groupId>
+                            <artifactId>ejb</artifactId>
+                            <bundleFileName>ejb.jar</bundleFileName>
+                        </ejbModule>
+                        <webModule>
+                            <groupId>lk.kaushalya</groupId>
+                            <artifactId>web</artifactId>
+                            <contextRoot>/ee-web</contextRoot>
+                            <bundleFileName>web.war</bundleFileName>
+                        </webModule>
+                    </modules>
                 </configuration>
             </plugin>
         </plugins>
